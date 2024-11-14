@@ -1,0 +1,1076 @@
+12:27:20 **** Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411retx.d" -MT"Core/Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411retx.o" "../Core/Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: error: unknown type name 'HAL_GPIO'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:103:29: note: in expansion of macro 'LD2_GPIO_Port'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:103:44: note: in expansion of macro 'LD2_Pin'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                            ^~~~~~~
+../Core/Src/main.c:103:53: error: expected declaration specifiers or '...' before numeric constant
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                                     ^
+../Core/Src/main.c:105:11: error: unknown type name 'HAL_GPIO'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:105:29: note: in expansion of macro 'LD2_GPIO_Port'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:105:44: note: in expansion of macro 'LD2_Pin'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                            ^~~~~~~
+../Core/Src/main.c:105:53: error: expected declaration specifiers or '...' before numeric constant
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                                     ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+12:28:06 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: error: unknown type name 'HAL_GPIO'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:103:29: note: in expansion of macro 'LD2_GPIO_Port'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:103:44: note: in expansion of macro 'LD2_Pin'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                            ^~~~~~~
+../Core/Src/main.c:103:53: error: expected declaration specifiers or '...' before numeric constant
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                                     ^
+../Core/Src/main.c:105:11: error: unknown type name 'HAL_GPIO'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:105:29: note: in expansion of macro 'LD2_GPIO_Port'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:105:44: note: in expansion of macro 'LD2_Pin'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                            ^~~~~~~
+../Core/Src/main.c:105:53: error: expected declaration specifiers or '...' before numeric constant
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                                     ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+12:28:12 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: error: unknown type name 'HAL_GPIO'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:103:29: note: in expansion of macro 'LD2_GPIO_Port'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:103:44: note: in expansion of macro 'LD2_Pin'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                            ^~~~~~~
+../Core/Src/main.c:103:53: error: expected declaration specifiers or '...' before numeric constant
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                                     ^
+../Core/Src/main.c:105:11: error: unknown type name 'HAL_GPIO'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:105:29: note: in expansion of macro 'LD2_GPIO_Port'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:105:44: note: in expansion of macro 'LD2_Pin'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                            ^~~~~~~
+../Core/Src/main.c:105:53: error: expected declaration specifiers or '...' before numeric constant
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                                     ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+12:28:55 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: error: unknown type name 'HAL_GPIO'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:103:29: note: in expansion of macro 'LD2_GPIO_Port'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:103:44: note: in expansion of macro 'LD2_Pin'
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                            ^~~~~~~
+../Core/Src/main.c:103:53: error: expected declaration specifiers or '...' before numeric constant
+  103 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                                     ^
+../Core/Src/main.c:105:11: error: unknown type name 'HAL_GPIO'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:105:29: note: in expansion of macro 'LD2_GPIO_Port'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:105:44: note: in expansion of macro 'LD2_Pin'
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                            ^~~~~~~
+../Core/Src/main.c:105:53: error: expected declaration specifiers or '...' before numeric constant
+  105 |           HAL_GPIO WRITEPIN(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                                     ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+12:30:48 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: error: unknown type name 'HAL_GPIO'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:103:29: note: in expansion of macro 'LD2_GPIO_Port'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:103:44: note: in expansion of macro 'LD2_Pin'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                            ^~~~~~~
+../Core/Src/main.c:103:53: error: expected declaration specifiers or '...' before numeric constant
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                                     ^
+../Core/Src/main.c:105:11: error: unknown type name 'HAL_GPIO'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:105:29: note: in expansion of macro 'LD2_GPIO_Port'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:105:44: note: in expansion of macro 'LD2_Pin'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                            ^~~~~~~
+../Core/Src/main.c:105:53: error: expected declaration specifiers or '...' before numeric constant
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                                     ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+12:36:32 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: error: unknown type name 'HAL_GPIO'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:103:29: note: in expansion of macro 'LD2_GPIO_Port'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:103:44: note: in expansion of macro 'LD2_Pin'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                            ^~~~~~~
+../Core/Src/main.c:103:53: error: expected declaration specifiers or '...' before numeric constant
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                                     ^
+../Core/Src/main.c:105:11: error: unknown type name 'HAL_GPIO'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:105:29: note: in expansion of macro 'LD2_GPIO_Port'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:105:44: note: in expansion of macro 'LD2_Pin'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                            ^~~~~~~
+../Core/Src/main.c:105:53: error: expected declaration specifiers or '...' before numeric constant
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                                     ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+12:37:39 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: error: unknown type name 'HAL_GPIO'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:103:29: note: in expansion of macro 'LD2_GPIO_Port'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:103:44: note: in expansion of macro 'LD2_Pin'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                            ^~~~~~~
+../Core/Src/main.c:103:53: error: expected declaration specifiers or '...' before numeric constant
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                                     ^
+../Core/Src/main.c:105:11: error: unknown type name 'HAL_GPIO'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:105:29: note: in expansion of macro 'LD2_GPIO_Port'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:105:44: note: in expansion of macro 'LD2_Pin'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                            ^~~~~~~
+../Core/Src/main.c:105:53: error: expected declaration specifiers or '...' before numeric constant
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                                     ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+12:38:06 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: error: unknown type name 'HAL_GPIO'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:103:29: note: in expansion of macro 'LD2_GPIO_Port'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:103:44: note: in expansion of macro 'LD2_Pin'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                            ^~~~~~~
+../Core/Src/main.c:103:53: error: expected declaration specifiers or '...' before numeric constant
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                                     ^
+../Core/Src/main.c:105:11: error: unknown type name 'HAL_GPIO'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:105:29: note: in expansion of macro 'LD2_GPIO_Port'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:105:44: note: in expansion of macro 'LD2_Pin'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                            ^~~~~~~
+../Core/Src/main.c:105:53: error: expected declaration specifiers or '...' before numeric constant
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                                     ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+12:38:24 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: error: unknown type name 'HAL_GPIO'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:103:29: note: in expansion of macro 'LD2_GPIO_Port'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:103:44: note: in expansion of macro 'LD2_Pin'
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                            ^~~~~~~
+../Core/Src/main.c:103:53: error: expected declaration specifiers or '...' before numeric constant
+  103 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+      |                                                     ^
+../Core/Src/main.c:105:11: error: unknown type name 'HAL_GPIO'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |           ^~~~~~~~
+In file included from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:782:29: error: expected declaration specifiers or '...' before '(' token
+  782 | #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
+      |                             ^
+../Core/Inc/main.h:67:23: note: in expansion of macro 'GPIOA'
+   67 | #define LD2_GPIO_Port GPIOA
+      |                       ^~~~~
+../Core/Src/main.c:105:29: note: in expansion of macro 'LD2_GPIO_Port'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                             ^~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:90:36: error: expected declaration specifiers or '...' before '(' token
+   90 | #define GPIO_PIN_5                 ((uint16_t)0x0020)  /* Pin 5 selected    */
+      |                                    ^
+../Core/Inc/main.h:66:17: note: in expansion of macro 'GPIO_PIN_5'
+   66 | #define LD2_Pin GPIO_PIN_5
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:105:44: note: in expansion of macro 'LD2_Pin'
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                            ^~~~~~~
+../Core/Src/main.c:105:53: error: expected declaration specifiers or '...' before numeric constant
+  105 |           HAL_GPIO WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+      |                                                     ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+12:39:54 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   7824	     20	   1644	   9488	   2510	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+12:40:06 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-size  test001.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7824	     20	   1644	   9488	   2510	test001.elf
+Finished building: default.size.stdout
+ 
+14:15:28 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   7876	     20	   1644	   9540	   2544	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+14:16:41 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   7884	     20	   1644	   9548	   254c	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+14:17:29 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   7848	     20	   1644	   9512	   2528	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+14:17:32 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-size  test001.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7848	     20	   1644	   9512	   2528	test001.elf
+Finished building: default.size.stdout
+ 
+14:18:17 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   7848	     20	   1644	   9512	   2528	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+14:18:24 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-size  test001.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7848	     20	   1644	   9512	   2528	test001.elf
+Finished building: default.size.stdout
+ 
+14:27:50 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:63:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   63 | ISR(GPIO_EXTI13)
+      | ^~~
+../Core/Src/main.c: In function 'ISR':
+../Core/Src/main.c:63:1: warning: type of 'GPIO_EXTI13' defaults to 'int' [-Wimplicit-int]
+../Core/Src/main.c:65:57: error: 'mode' undeclared (first use in this function)
+   65 |         if(!HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin))     mode = mode ? 0 : 1;
+      |                                                         ^~~~
+../Core/Src/main.c:65:57: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+   66 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+14:46:52 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+../Core/Src/main.c:63:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   63 | ISR(GPIO_EXIT13)
+      | ^~~
+../Core/Src/main.c: In function 'ISR':
+../Core/Src/main.c:63:1: warning: type of 'GPIO_EXIT13' defaults to 'int' [-Wimplicit-int]
+../Core/Src/main.c:65:57: error: 'mode' undeclared (first use in this function)
+   65 |         if(!HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin))     mode = mode ? 0 : 1;
+      |                                                         ^~~~
+../Core/Src/main.c:65:57: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
+   66 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+15:13:09 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:56:57: error: 'mode' undeclared (first use in this function)
+   56 |         if(!HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin))     mode = mode ? 0 : 1;
+      |                                                         ^~~~
+../Core/Src/main.c:56:57: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+15:13:53 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8084	     24	   1640	   9748	   2614	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+15:14:05 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-size  test001.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8084	     24	   1640	   9748	   2614	test001.elf
+Finished building: default.size.stdout
+ 
+15:14:58 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8072	     24	   1640	   9736	   2608	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+15:17:07 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8068	     24	   1640	   9732	   2604	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+15:19:46 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8068	     24	   1640	   9732	   2604	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+15:21:15 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8056	     24	   1640	   9720	   25f8	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+15:49:49 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8228	     28	   1644	   9900	   26ac	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+16:05:43 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:68:19: error: 'B2_Pin' undeclared (first use in this function); did you mean 'B1_Pin'?
+   68 |         if(btn == B2_Pin)
+      |                   ^~~~~~
+      |                   B1_Pin
+../Core/Src/main.c:68:19: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+16:05:51 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:68:19: error: 'B2_Pin' undeclared (first use in this function); did you mean 'B1_Pin'?
+   68 |         if(btn == B2_Pin)
+      |                   ^~~~~~
+      |                   B1_Pin
+../Core/Src/main.c:68:19: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+16:06:05 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:68:19: error: 'B2_Pin' undeclared (first use in this function); did you mean 'B1_Pin'?
+   68 |         if(btn == B2_Pin)
+      |                   ^~~~~~
+      |                   B1_Pin
+../Core/Src/main.c:68:19: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+16:06:32 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8212	     28	   1644	   9884	   269c	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+16:08:00 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:127:11: warning: this 'else' clause does not guard... [-Wmisleading-indentation]
+  127 |           else
+      |           ^~~~
+../Core/Src/main.c:129:19: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'else'
+  129 |                   HAL_Delay(del_val); // ms
+      |                   ^~~~~~~~~
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8212	     28	   1644	   9884	   269c	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+16:08:23 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8212	     28	   1644	   9884	   269c	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+16:38:17 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8212	     28	   1644	   9884	   269c	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+16:38:39 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8224	     28	   1644	   9896	   26a8	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+16:39:41 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8224	     28	   1644	   9896	   26a8	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
+16:42:29 **** Incremental Build of configuration Debug for project test001 ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "test001.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test001\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test001.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test001.elf
+ 
+arm-none-eabi-size  test001.elf 
+arm-none-eabi-objdump -h -S test001.elf  > "test001.list"
+   text	   data	    bss	    dec	    hex	filename
+   8224	     28	   1644	   9896	   26a8	test001.elf
+Finished building: default.size.stdout
+ 
+Finished building: test001.list
+ 
