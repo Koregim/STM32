@@ -1,10 +1,10 @@
-16:51:56 **** Incremental Build of configuration Debug for project tset004_ADC_DMA ****
+16:53:07 **** Incremental Build of configuration Debug for project tset004_ADC_DMA ****
 make -j24 all 
 arm-none-eabi-size  tset004_ADC_DMA.elf 
    text	   data	    bss	    dec	    hex	filename
-  20208	    112	   2224	  22544	   5810	tset004_ADC_DMA.elf
+  20228	    112	   2224	  22564	   5824	tset004_ADC_DMA.elf
 Finished building: default.size.stdout
  
 
-16:51:56 Build Finished. 0 errors, 0 warnings. (took 127ms)
+16:53:08 Build Finished. 0 errors, 0 warnings. (took 128ms)
 

@@ -5,9 +5,10 @@
  *      Author: user
  */
 #include "main.h"
-
+#include "C:\Users\user\STM32Cube\Repository\STM32Cube_FW_F4_V1.28.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h"
 extern UART_HandleTypeDef huart2;
-
+int *hi2c = NULL;
+//I2C_HandleTypeDef *hi2c = NULL;
 int __io_putchar(int ch)
 {
 	HAL_UART_Transmit(&huart2, &ch, 1, 10);
@@ -39,4 +40,26 @@ void Cursor(int x, int y)
 	char buf[20];
 	sprintf(buf, "\033[%d;%dH", y, x);
 	puts(buf);   		//or printf("%s", buf);
+}
+
+//void i2c_init(I2C_HandleTypeDef *p)
+void i2c_init(int *p)
+{
+	hi2c = p;
+}
+
+int i2c_scan()
+{
+	if(hi2c == NULL) return;
+	cls();
+	Cursor(0, 0);
+	for(int addr = 0; addr < 128; addr++)
+	{
+		if(HAL_I2C_IsDeviceReady(hi2c, addr, 1, 10) == HAL_OK)
+			printf("  %02x ", addr);
+		else
+			printf("  .  ");
+
+		if((addr % 16) == 15) printf("\r\n");
+	}
 }

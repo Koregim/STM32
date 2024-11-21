@@ -94,6 +94,7 @@ int main(void)
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
   ProgramStart("ADC - Polling");
+  HAL_ADC_Start(&hadc1);			//continuous
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -103,17 +104,19 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_ADC_Start(&hadc1);
+	  //HAL_ADC_Start(&hadc1); //discontinuous
 	  HAL_ADC_PollForConversion(&hadc1,  10 /*ms*/);
 	  int val1 = HAL_ADC_GetValue(&hadc1) / 51;
-	  HAL_ADC_Start(&hadc1);
+
+	  //HAL_ADC_Start(&hadc1); //discontinuous
 	  HAL_ADC_PollForConversion(&hadc1,  10 /*ms*/);
 	  int val2 = HAL_ADC_GetValue(&hadc1) / 171;
+
 	  if(HAL_GPIO_ReadPin(z_axis_GPIO_Port, z_axis_Pin))
-		  printf("*\r\n", val1, val2);
+		  printf("Value (%d, %d)\r\n", val1, val2);
 	  else
-		  printf("Pushed\r\n", val1, val2);
-	  Cursor(val1, val2);
+		  printf("Value (%d, %d)Pushed\r\n", val1, val2);
+//	  Cursor(val1, val2);
 	  HAL_Delay(100);
   }
   /* USER CODE END 3 */
@@ -189,15 +192,14 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
   hadc1.Init.ScanConvMode = ENABLE;
-  hadc1.Init.ContinuousConvMode = DISABLE;
-  hadc1.Init.DiscontinuousConvMode = ENABLE;
-  hadc1.Init.NbrOfDiscConversion = 1;
+  hadc1.Init.ContinuousConvMode = ENABLE;
+  hadc1.Init.DiscontinuousConvMode = DISABLE;
   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc1.Init.NbrOfConversion = 2;
   hadc1.Init.DMAContinuousRequests = DISABLE;
-  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+  hadc1.Init.EOCSelection = ADC_EOC_SEQ_CONV;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
   {
     Error_Handler();
