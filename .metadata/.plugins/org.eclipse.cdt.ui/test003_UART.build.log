@@ -1,10 +1,78 @@
-16:53:07 **** Incremental Build of configuration Debug for project test003_UART ****
+16:44:52 **** Incremental Build of configuration Debug for project test003_UART ****
 make -j24 all 
+arm-none-eabi-gcc "C:/Users/user/source/repos/STM32/myLib/myLib.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/myLib.d" -MT"Core/Src/myLib.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/myLib.o"
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function '__io_putchar':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:14:36: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   14 |         HAL_UART_Transmit(&huart2, &ch, 1, 10);
+      |                                    ^~~
+      |                                    |
+      |                                    int *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function 'ProgramStart':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:26:9: warning: implicit declaration of function 'cls' [-Wimplicit-function-declaration]
+   26 |         cls();
+      |         ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:27:9: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+   27 |         Cursor(0, 0);
+      |         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:28:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   28 |         printf("Program Name - %s\r\n", str);
+      |         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:8:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    7 | #include "main.h"
+  +++ |+#include <stdio.h>
+    8 | //#include "C:\Users\user\STM32Cube\Repository\STM32Cube_FW_F4_V1.28.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h"
+C:/Users/user/source/repos/STM32/myLib/myLib.c:28:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   28 |         printf("Program Name - %s\r\n", str);
+      |         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:28:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+C:/Users/user/source/repos/STM32/myLib/myLib.c: At top level:
+C:/Users/user/source/repos/STM32/myLib/myLib.c:33:6: warning: conflicting types for 'cls'; have 'void()'
+   33 | void cls()
+      |      ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:26:9: note: previous implicit declaration of 'cls' with type 'void()'
+   26 |         cls();
+      |         ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function 'cls':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:35:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   35 |         printf("\033[2J");
+      |         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:35:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+C:/Users/user/source/repos/STM32/myLib/myLib.c: At top level:
+C:/Users/user/source/repos/STM32/myLib/myLib.c:38:6: warning: conflicting types for 'Cursor'; have 'void(int,  int)'
+   38 | void Cursor(int x, int y)
+      |      ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:27:9: note: previous implicit declaration of 'Cursor' with type 'void(int,  int)'
+   27 |         Cursor(0, 0);
+      |         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function 'Cursor':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:41:9: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   41 |         sprintf(buf, "\033[%d;%dH", y, x);
+      |         ^~~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:41:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+C:/Users/user/source/repos/STM32/myLib/myLib.c:41:9: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+C:/Users/user/source/repos/STM32/myLib/myLib.c:41:9: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+C:/Users/user/source/repos/STM32/myLib/myLib.c:42:9: warning: implicit declaration of function 'puts' [-Wimplicit-function-declaration]
+   42 |         puts(buf);              //or printf("%s", buf);
+      |         ^~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:42:9: note: include '<stdio.h>' or provide a declaration of 'puts'
+arm-none-eabi-gcc -o "test003_UART.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test003_UART\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test003_UART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test003_UART.elf
+ 
 arm-none-eabi-size  test003_UART.elf 
+arm-none-eabi-objdump -h -S test003_UART.elf  > "test003_UART.list"
    text	   data	    bss	    dec	    hex	filename
-  31616	    476	   1980	  34072	   8518	test003_UART.elf
+  31600	    476	   1980	  34056	   8508	test003_UART.elf
 Finished building: default.size.stdout
  
+Finished building: test003_UART.list
+ 
 
-16:53:07 Build Finished. 0 errors, 0 warnings. (took 126ms)
+16:44:53 Build Finished. 0 errors, 11 warnings. (took 684ms)
 

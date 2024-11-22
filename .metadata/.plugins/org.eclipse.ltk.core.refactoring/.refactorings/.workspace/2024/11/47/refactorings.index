@@ -1,2 +1,4 @@
 1732157164775	Delete resource 'test005_CLCD'
 1732157243459	Delete resource 'test005_CLCD'
+1732234294976	Rename resource 'tset004_ADC_DMA'
+1732244048883	Delete resource 'test005_CLCD/Core/Src/lcd1602.c'

@@ -93,9 +93,15 @@ int main(void)
   MX_USART2_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
+
   ProgramStart("LCD 1602");
   i2c_init(&hi2c1);
   i2c_scan();
+  HAL_Delay(100);
+  lcd_init();
+  HAL_Delay(10);
+  lcd_print("Hello");
+  lcd_printEx("World !", 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
