@@ -1,59 +1,81 @@
-16:49:27 **** Incremental Build of configuration Debug for project Practice_CLCD_ADC ****
+15:20:03 **** Incremental Build of configuration Debug for project Practice_CLCD_ADC ****
 make -j24 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:107:3: warning: implicit declaration of function 'i2c_init' [-Wimplicit-function-declaration]
-  107 |   i2c_init(&hi2c2);
-      |   ^~~~~~~~
-../Core/Src/main.c:108:3: warning: implicit declaration of function 'i2c_scan' [-Wimplicit-function-declaration]
-  108 |   i2c_scan();
-      |   ^~~~~~~~
-../Core/Src/main.c:110:3: warning: implicit declaration of function 'lcd_init' [-Wimplicit-function-declaration]
-  110 |   lcd_init();
-      |   ^~~~~~~~
-../Core/Src/main.c:112:3: warning: implicit declaration of function 'lcd_print' [-Wimplicit-function-declaration]
-  112 |   lcd_print("X & Y Print");
-      |   ^~~~~~~~~
-../Core/Src/main.c:113:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
-  113 |   ProgramStart("JoyStick_CLCD");
-      |   ^~~~~~~~~~~~
-../Core/Src/main.c:114:29: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
-  114 |   HAL_ADC_Start_DMA(&hadc1, val, 2);
-      |                             ^~~
-      |                             |
-      |                             short unsigned int *
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:295,
+arm-none-eabi-gcc "C:/Users/user/source/repos/STM32/myLib/lcd1602.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/lcd1602.d" -MT"Core/Src/lcd1602.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/lcd1602.o"
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c: In function 'lcd_command':
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:28:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+   28 |         HAL_I2C_Master_Transmit(hi2c, I2C_ADDR, dd, 4, 10);
+      |                                                 ^~
+      |                                                 |
+      |                                                 char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:363,
                  from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
                  from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h:594:72: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'short unsigned int *'
-  594 | HAL_StatusTypeDef HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
-      |                                                              ~~~~~~~~~~^~~~~
-../Core/Src/main.c:133:11: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-  133 |           sprintf(trans_val0, "X : %-5.1f", tm);
-      |           ^~~~~~~
-../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-   20 | #include "main.h"
+                 from C:/Users/user/source/repos/STM32/myLib/lcd1602.c:8:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h:566:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  566 | HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                                         ~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c: In function 'lcd_data':
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:43:49: warning: pointer targets in passing argument 3 of 'HAL_I2C_Master_Transmit' differ in signedness [-Wpointer-sign]
+   43 |         HAL_I2C_Master_Transmit(hi2c, I2C_ADDR, dd, 4, 10);
+      |                                                 ^~
+      |                                                 |
+      |                                                 char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:363,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/lcd1602.c:8:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h:566:98: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  566 | HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                                         ~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c: In function 'lcd_printEx2':
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:89:87: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   89 |         ln2++ ? lcd_command(0x80),HAL_Delay(100), lcd_print(sBuf), lcd_command(0xc0), strcpy(sBuf, str) : lcd_command(0x80);
+      |                                                                                       ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:10:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+    9 | #include "C:\Users\user\STM32Cube\Repository\STM32Cube_FW_F4_V1.28.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h"
+  +++ |+#include <string.h>
+   10 | extern I2C_HandleTypeDef *hi2c;
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:89:87: warning: incompatible implicit declaration of built-in function 'strcpy' [-Wbuiltin-declaration-mismatch]
+   89 |         ln2++ ? lcd_command(0x80),HAL_Delay(100), lcd_print(sBuf), lcd_command(0xc0), strcpy(sBuf, str) : lcd_command(0x80);
+      |                                                                                       ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:89:87: note: include '<string.h>' or provide a declaration of 'strcpy'
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c: In function 'i2c_scan':
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:100:26: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
+  100 |         if(hi2c == NULL) return;
+      |                          ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:98:5: note: declared here
+   98 | int i2c_scan()
+      |     ^~~~~~~~
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:104:25: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  104 |                         printf("  %02x ", addr);
+      |                         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:10:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    9 | #include "C:\Users\user\STM32Cube\Repository\STM32Cube_FW_F4_V1.28.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h"
   +++ |+#include <stdio.h>
-   21 | 
-../Core/Src/main.c:133:11: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
-  133 |           sprintf(trans_val0, "X : %-5.1f", tm);
-      |           ^~~~~~~
-../Core/Src/main.c:133:11: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-../Core/Src/main.c:135:11: warning: implicit declaration of function 'lcd_printEx' [-Wimplicit-function-declaration]
-  135 |           lcd_printEx(trans_val0, 0); HAL_Delay(100);
-      |           ^~~~~~~~~~~
+   10 | extern I2C_HandleTypeDef *hi2c;
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:104:25: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  104 |                         printf("  %02x ", addr);
+      |                         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:104:25: note: include '<stdio.h>' or provide a declaration of 'printf'
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:106:25: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  106 |                         printf("  .  ");
+      |                         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:106:25: note: include '<stdio.h>' or provide a declaration of 'printf'
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:108:39: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  108 |                 if((addr % 16) == 15) printf("\r\n");
+      |                                       ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:108:39: note: include '<stdio.h>' or provide a declaration of 'printf'
 arm-none-eabi-gcc -o "Practice_CLCD_ADC.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\Practice_CLCD_ADC\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Practice_CLCD_ADC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Practice_CLCD_ADC.elf
  
 arm-none-eabi-size  Practice_CLCD_ADC.elf 
 arm-none-eabi-objdump -h -S Practice_CLCD_ADC.elf  > "Practice_CLCD_ADC.list"
    text	   data	    bss	    dec	    hex	filename
-  41752	    476	   2308	  44536	   adf8	Practice_CLCD_ADC.elf
+  42496	    476	   2308	  45280	   b0e0	Practice_CLCD_ADC.elf
 Finished building: default.size.stdout
  
 Finished building: Practice_CLCD_ADC.list
  
 
-16:49:27 Build Finished. 0 errors, 9 warnings. (took 492ms)
+15:20:03 Build Finished. 0 errors, 9 warnings. (took 540ms)
 

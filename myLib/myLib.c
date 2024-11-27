@@ -5,10 +5,21 @@
  *      Author: user
  */
 #include "main.h"
+#include <stdio.h>
 //#include "C:\Users\user\STM32Cube\Repository\STM32Cube_FW_F4_V1.28.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h"
 extern UART_HandleTypeDef huart2;
 //int *hi2c = NULL;
 //I2C_HandleTypeDef *hi2c = NULL;
+
+int __io_getchar(void)
+{
+	char ch;
+	while(HAL_UART_Receive(&huart2, &ch, 1, 10) != HAL_OK);
+	HAL_UART_Transmit(&huart2, &ch, 1, 10);	//Echo
+	if(ch == '\r')
+		HAL_UART_Transmit(&huart2, "\n", 1, 10);
+	return ch;
+}
 int __io_putchar(int ch)
 {
 	HAL_UART_Transmit(&huart2, &ch, 1, 10);
@@ -28,6 +39,7 @@ void ProgramStart(char * str)
 	printf("Program Name - %s\r\n", str);
 	printf("Press Blue-Button(B1) to Start...\r\n");
 	StandBy();
+	setvbuf(stdin, NULL, _IONBF, 0);	//scanf buffer clear
 }
 
 void cls()

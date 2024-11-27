@@ -68,7 +68,27 @@ void lcd_printEx(char *str, int ln)
 	ln ? lcd_command(0xc0) : lcd_command(0x80);
 	lcd_print(str);
 }
-
+int ln2 = 0;
+char sBuf[20];
+void lcd_printEx2(char *str)
+{
+//	if(ln == 0) lcd_command(0x80);
+//	if(ln == 1) lcd_command(0xc0);
+//	if(ln2 == 0)
+//	{
+//		lcd_command(0x80);
+//		ln2++;
+//	}
+//	else if(ln2 == 1)
+//	{
+//		lcd_command(0x80);
+//		lcd_print(sBuf);
+//		lcd_command(0xc0);
+//		strcpy(sBuf, str);
+//	}
+	ln2++ ? lcd_command(0x80),HAL_Delay(100), lcd_print(sBuf), lcd_command(0xc0), strcpy(sBuf, str) : lcd_command(0x80);
+	lcd_print(str);
+}
 void i2c_init(I2C_HandleTypeDef *p)
 //void i2c_init(int *p)
 {
