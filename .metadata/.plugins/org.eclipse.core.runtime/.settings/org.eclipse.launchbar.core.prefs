@@ -1,9 +1,10 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test001 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test002_Timer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test004_ADC_INTR Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test004_ADC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:tset004_ADC_DMA Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test005_CLCD Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Practice_CLCD_ADC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test003_UART Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test003_UART_DMA Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test001 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test002_Timer Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test004_ADC_INTR Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test004_ADC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:tset004_ADC_DMA Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test005_CLCD Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test003_UART Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test003_UART_DMA Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test004_ADC_DMA Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Practice_CLCD_ADC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test006_uSonic Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Practice_CLCD_ADC\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Practice_CLCD_ADC\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test001\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test001\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test006_uSonic\ Debug/activeLaunchMode=run
