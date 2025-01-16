@@ -1,9 +1,6 @@
-../Core/Src/main.c:62:6:microDelay	2
-../Core/Src/main.c:73:6:Trigger	1
-../Core/Src/main.c:82:8:Distance	5
-../Core/Src/main.c:114:5:main	1
-../Core/Src/main.c:165:6:SystemClock_Config	3
-../Core/Src/main.c:212:13:MX_TIM2_Init	4
-../Core/Src/main.c:257:13:MX_USART2_UART_Init	2
-../Core/Src/main.c:290:13:MX_GPIO_Init	1
-../Core/Src/main.c:336:6:Error_Handler	1
+../Core/Src/main.c:69:5:main	1
+../Core/Src/main.c:120:6:SystemClock_Config	3
+../Core/Src/main.c:167:13:MX_TIM2_Init	4
+../Core/Src/main.c:212:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:245:13:MX_GPIO_Init	1
+../Core/Src/main.c:291:6:Error_Handler	1

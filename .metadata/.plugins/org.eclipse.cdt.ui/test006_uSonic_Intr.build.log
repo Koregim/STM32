@@ -1,0 +1,10 @@
+16:38:40 **** Incremental Build of configuration Debug for project test006_uSonic_Intr ****
+make -j24 all 
+arm-none-eabi-size  test006_uSonic_Intr.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28260	    476	   2144	  30880	   78a0	test006_uSonic_Intr.elf
+Finished building: default.size.stdout
+ 
+
+16:38:40 Build Finished. 0 errors, 0 warnings. (took 139ms)
+

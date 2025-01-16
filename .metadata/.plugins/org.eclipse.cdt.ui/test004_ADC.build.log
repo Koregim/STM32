@@ -1,4 +1,4 @@
-15:43:36 **** Incremental Build of configuration Debug for project test004_ADC ****
+16:38:39 **** Incremental Build of configuration Debug for project test004_ADC ****
 make -j24 all 
 arm-none-eabi-size  test004_ADC.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  test004_ADC.elf
 Finished building: default.size.stdout
  
 
-15:43:36 Build Finished. 0 errors, 0 warnings. (took 253ms)
+16:38:39 Build Finished. 0 errors, 0 warnings. (took 139ms)
 

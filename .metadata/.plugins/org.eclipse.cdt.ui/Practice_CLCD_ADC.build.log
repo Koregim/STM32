@@ -1,4 +1,4 @@
-15:43:34 **** Incremental Build of configuration Debug for project Practice_CLCD_ADC ****
+16:38:38 **** Incremental Build of configuration Debug for project Practice_CLCD_ADC ****
 make -j24 all 
 arm-none-eabi-size  Practice_CLCD_ADC.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  Practice_CLCD_ADC.elf
 Finished building: default.size.stdout
  
 
-15:43:34 Build Finished. 0 errors, 0 warnings. (took 302ms)
+16:38:38 Build Finished. 0 errors, 0 warnings. (took 189ms)
 

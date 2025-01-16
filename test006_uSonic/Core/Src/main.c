@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "uSonic.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,52 +59,7 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void microDelay(int us) {
-//	int t1 = htim2.Instance->CNT;
-//	while((htim2.Instance->CNT - t1 < us));
-//	{
-//		if(htim2.Instance->CNT - t1 > us)	break;
-//
-//	}
-	htim2.Instance->CNT = 0;
-	while((htim2.Instance->CNT < us));
-}
 
-void Trigger()
-{
-	HAL_GPIO_WritePin(trig_GPIO_Port, trig_Pin, 0);
-	microDelay(10);
-	HAL_GPIO_WritePin(trig_GPIO_Port, trig_Pin, 1);
-	microDelay(10);
-	HAL_GPIO_WritePin(trig_GPIO_Port, trig_Pin, 0);
-}
-
-double Distance()
-{
-	int t0 = 0, t1, t2;
-	htim2.Instance->CNT = 0;
-	Trigger();
-	while(!(HAL_GPIO_ReadPin(echo_GPIO_Port, echo_Pin)))
-	{
-		if(htim2.Instance->CNT > 30000) return -1;
-	}
-	t1 = htim2.Instance->CNT;
-	//	{
-	//		if(HAL_GPIO_ReadPin(echo_GPIO_Port, echo_Pin)) break;
-	//	}
-
-	while(HAL_GPIO_ReadPin(echo_GPIO_Port, echo_Pin))
-	{
-		if(htim2.Instance->CNT > 60000 + t1) return -1;
-	}
-	t2 = htim2.Instance->CNT;
-
-	double dist = (t2 - t1) * 0.17;
-
-
-
-	return dist;
-}
 /* USER CODE END 0 */
 
 /**
@@ -300,7 +255,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, LD2_Pin|trig_Pin|echo_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LD2_Pin|Trig_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -308,12 +263,18 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LD2_Pin trig_Pin echo_Pin */
-  GPIO_InitStruct.Pin = LD2_Pin|trig_Pin|echo_Pin;
+  /*Configure GPIO pins : LD2_Pin Trig_Pin */
+  GPIO_InitStruct.Pin = LD2_Pin|Trig_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : Echo_Pin */
+  GPIO_InitStruct.Pin = Echo_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(Echo_GPIO_Port, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
