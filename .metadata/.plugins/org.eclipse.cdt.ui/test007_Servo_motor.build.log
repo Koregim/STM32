@@ -1,0 +1,38 @@
+12:25:48 **** Incremental Build of configuration Debug for project test007_Servo_motor ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:96:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+   96 |   ProgramStart("Motor Control - Servo");
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c:105:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  105 |           printf("Input Angle :");
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:105:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  105 |           printf("Input Angle :");
+      |           ^~~~~~
+../Core/Src/main.c:105:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:106:11: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+  106 |           scanf("%d", &val);
+      |           ^~~~~
+../Core/Src/main.c:106:11: note: include '<stdio.h>' or provide a declaration of 'scanf'
+../Core/Src/main.c:106:11: warning: incompatible implicit declaration of built-in function 'scanf' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:106:11: note: include '<stdio.h>' or provide a declaration of 'scanf'
+arm-none-eabi-gcc -o "test007_Servo_motor.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test007_Servo_motor\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test007_Servo_motor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test007_Servo_motor.elf
+ 
+arm-none-eabi-size  test007_Servo_motor.elf 
+arm-none-eabi-objdump -h -S test007_Servo_motor.elf  > "test007_Servo_motor.list"
+   text	   data	    bss	    dec	    hex	filename
+  38532	    476	   2052	  41060	   a064	test007_Servo_motor.elf
+Finished building: default.size.stdout
+ 
+Finished building: test007_Servo_motor.list
+ 
+
+12:25:48 Build Finished. 0 errors, 5 warnings. (took 437ms)
+

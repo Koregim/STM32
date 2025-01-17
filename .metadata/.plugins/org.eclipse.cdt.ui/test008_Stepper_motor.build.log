@@ -1,0 +1,38 @@
+17:14:52 **** Incremental Build of configuration Debug for project test008_Stepper_motor ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:92:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+   92 |   ProgramStart("Step motor control");
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c:102:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  102 |           printf("Angle Input : ");
+      |           ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:102:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  102 |           printf("Angle Input : ");
+      |           ^~~~~~
+../Core/Src/main.c:102:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:104:11: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+  104 |           scanf("%d", &aval);
+      |           ^~~~~
+../Core/Src/main.c:104:11: note: include '<stdio.h>' or provide a declaration of 'scanf'
+../Core/Src/main.c:104:11: warning: incompatible implicit declaration of built-in function 'scanf' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:104:11: note: include '<stdio.h>' or provide a declaration of 'scanf'
+arm-none-eabi-gcc -o "test008_Stepper_motor.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test008_Stepper_motor\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test008_Stepper_motor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test008_Stepper_motor.elf
+ 
+arm-none-eabi-size  test008_Stepper_motor.elf 
+arm-none-eabi-objdump -h -S test008_Stepper_motor.elf  > "test008_Stepper_motor.list"
+   text	   data	    bss	    dec	    hex	filename
+  35244	    476	   1980	  37700	   9344	test008_Stepper_motor.elf
+Finished building: default.size.stdout
+ 
+Finished building: test008_Stepper_motor.list
+ 
+
+17:14:53 Build Finished. 0 errors, 5 warnings. (took 378ms)
+
