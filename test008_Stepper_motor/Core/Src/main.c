@@ -56,7 +56,125 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+int aval, aval_half;
+int cnt = 0;
+void step_Wave(int step)
+{
+	switch(step)
+	{
+	case 0:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 1);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+		break;
+	case 1:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 1);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+		break;
+	case 2:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 1);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+		break;
+	case 3:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 1);
+		break;
 
+	}
+}
+void step_Full(int step)
+{
+	switch(step)
+	{
+	case 0:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 1);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 1);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+		break;
+	case 1:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 1);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 1);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+		break;
+	case 2:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 1);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 1);
+		break;
+	case 3:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 1);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 1);
+		break;
+
+	}
+}
+void step_Half(int step)
+{
+	switch(step)
+	{
+	case 0:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 1);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+		break;
+	case 1:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 1);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 1);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+		break;
+	case 2:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 1);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+		break;
+	case 3:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 1);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 1);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+		break;
+	case 4:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 1);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+		break;
+	case 5:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 1);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 1);
+		break;
+	case 6:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 1);
+		break;
+	case 7:
+		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 1);
+		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 1);
+		break;
+
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -91,8 +209,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   ProgramStart("Step motor control");
 
-  int aval;
-  int cnt = 0;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -100,39 +217,24 @@ int main(void)
   while (1)
   {
 	  printf("Angle Input : ");
-
+	  cnt = 0;
 	  scanf("%d", &aval);
-	  printf("val : %d\r\n", aval);
-	  aval = aval * 512 / 360;
-	  printf("val : %d\r\n", aval);
-	  while (cnt < aval){
-		  HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 1);
-		  HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
-		  HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
-		  HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
-		  HAL_Delay(5);
-		  HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
-		  HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 1);
-		  HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
-		  HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
-		  HAL_Delay(5);
-		  HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
-		  HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
-		  HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 1);
-		  HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
-		  HAL_Delay(5);
-		  HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
-		  HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
-		  HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
-		  HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 1);
-		  HAL_Delay(5);
+	  printf("Angle : %d\r\n", aval);
+	  aval_half = aval * 4096 / 360;
+	  aval = aval * 2048 / 360;
+
+//	  while (cnt < aval){	//wave mode
+//		  step_Wave(cnt % 4); HAL_Delay(2);
+//		  cnt++;
+//	  }
+//	  while (cnt < aval){	//full mode
+//		  step_Full(cnt % 4); HAL_Delay(2);
+//		  cnt++;
+//	  }
+	  while (cnt < aval_half){	//half mode
+		  step_Full(cnt % 8); HAL_Delay(2);
 		  cnt++;
 	  }
-
-
-
-
-
 
     /* USER CODE END WHILE */
 
