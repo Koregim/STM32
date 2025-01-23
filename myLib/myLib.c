@@ -54,6 +54,43 @@ void Cursor(int x, int y)
 	puts(buf);   		//or printf("%s", buf);
 }
 
+//void ToUpper(char *str)
+//{
+//	int cnt = 0;
+//
+//	while(cnt < strlen(str))
+//	{
+//		if(*(str+cnt) >= 'a' && *(str+cnt) <= 'z') *(str+cnt) -= 32;
+//		cnt++;
+//	}
+//}
+//
+//void ToLower(char *str)
+//{
+//	int cnt = 0;
+//
+//	while(cnt < strlen(str))
+//	{
+//		if(*(str+cnt) >= 'A' && *(str+cnt) <= 'Z' ) *(str+cnt) += 32;
+//		cnt++;
+//	}
+//}
+void ToUpper (char *s)
+{
+	while(*s)
+	{
+		if(*s >= 'a' && *s <= 'z') *s &= 0xdf;
+		s++;
+	}
+}
+void ToLower (char *s)
+{
+	while(*s)
+	{
+		if(*s >= 'A' && *s <= 'Z') *s |= ~0xdf;
+		s++;
+	}
+}
 //void i2c_init(I2C_HandleTypeDef *p)
 
 //void i2c_init(int *p)

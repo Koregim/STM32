@@ -70,9 +70,16 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	if(huart == &huart1)
 	{
 		buf1[tail1++] = dum1;
-		HAL_UART_Transmit(&huart2, &dum1, 1, 10);
-		HAL_UART_Receive_IT(&huart1, &dum1, 1);
+		HAL_UART_Transmit(&huart2, &dum1/*== buf1+t1-1*/, 1, 10);		// putty print
+		if(dum1 == '\r')		// End of Line
+		{
+			CheckCMD(buf1);
+			tail1 = 0;
+		}
+		HAL_UART_Receive_IT(&huart1, &dum1, 1);			// interrupt chain
 	}
+
+
 	else if(huart == &huart2)
 	{
 		buf2[tail2++] = dum2;
@@ -86,10 +93,57 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 //			HAL_UART_Transmit(&huart1, "\n", 1, 10);
 			tail2 = 0;
 		}
-		HAL_UART_Receive_IT(&huart2, &dum2, 1);
+		HAL_UART_Receive_IT(&huart2, &dum2, 1);			// interrupt chain
 	}
+}
+void Trim_EX(char *dest, char *s) // s = "    xx x \t \r\n" ==> "xx x"
+{
+	int trim_head = 0, trim_tail = strlen(s) - 1;
+	while(1)
+	{
+		if(*(s + trim_head) == ' ' || *(s + trim_head) == '\r' || *(s + trim_head) == '\n' || *(s + trim_head) == '\t') trim_head++;
+		else break;
+	}
+	while(1)
+	{
+		if(*(s + trim_tail) == ' ' || *(s + trim_tail) == '\r' || *(s + trim_tail) == '\n' || *(s + trim_tail) == '\t') trim_tail--;
+		else break;
+	}
+	strncpy(dest, (s + trim_head), (trim_tail - trim_head + 1));
+}
 
+char * Trim(char *s) // s = "    xx x \t \r\n" ==> "xx x"
+{
+	int trim_head = 0, trim_tail = strlen(s) - 1;
+	while(*(s + trim_head) == ' ' || *(s + trim_head) == '\r' || *(s + trim_head) == '\n' || *(s + trim_head) == '\t') trim_head++;
+//	{
+//		if(*(s + trim_head) == ' ' || *(s + trim_head) == '\r' || *(s + trim_head) == '\n' || *(s + trim_head) == '\t') trim_head++;
+//		else break;
+//	}
+	while(*(s + trim_tail) == ' ' || *(s + trim_tail) == '\r' || *(s + trim_tail) == '\n' || *(s + trim_tail) == '\t') trim_tail--;
+//	{
+//		if(*(s + trim_tail) == ' ' || *(s + trim_tail) == '\r' || *(s + trim_tail) == '\n' || *(s + trim_tail) == '\t') trim_tail--;
+//		else break;
+//	}
+	char *dest = (char *) malloc(trim_tail - trim_head + 1);
+	strncpy(dest, (s + trim_head), (trim_tail - trim_head + 1));
+	return dest;
+}
 
+void CheckCMD(char *bb)
+{
+	char *str = Trim(bb);
+//	char * str = Trim(bb); //Trim : white space remove
+//	Trim_EX(str,bb);
+	ToUpper(str);
+	if(strncmp(str, "LED", 3) == 0)
+	{
+		str = Trim(str+3);
+		if(str[0] == '1')
+			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+		else if(str[0] == '0')
+			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+	}
 }
 /* USER CODE END 0 */
 

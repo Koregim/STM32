@@ -1,24 +1,76 @@
-15:37:50 **** Incremental Build of configuration Debug for project test007_uSonic_Motor ****
+16:15:39 **** Incremental Build of configuration Debug for project test007_uSonic_Motor ****
 make -j24 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/user/source/repos/STM32/myLib" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:122:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
-  122 |   ProgramStart("Servo & uSonic");
-      |   ^~~~~~~~~~~~
-../Core/Src/main.c:133:11: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
-  133 |           Cursor(0,5);
-      |           ^~~~~~
-../Core/Src/main.c:134:11: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-  134 |           printf("Distance : %.2f\r\n", dist);
-      |           ^~~~~~
-../Core/Src/main.c:25:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   24 | #include "uSonic.h"
-  +++ |+#include <stdio.h>
-   25 | /* USER CODE END Includes */
-../Core/Src/main.c:134:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  134 |           printf("Distance : %.2f\r\n", dist);
-      |           ^~~~~~
-../Core/Src/main.c:134:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc "C:/Users/user/source/repos/STM32/myLib/myLib.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I"C:/Users/user/source/repos/STM32/myLib" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/myLib.d" -MT"Core/Src/myLib.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/myLib.o"
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function '__io_getchar':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:17:41: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive' differ in signedness [-Wpointer-sign]
+   17 |         while(HAL_UART_Receive(&huart2, &ch, 1, 10) != HAL_OK);
+      |                                         ^~~
+      |                                         |
+      |                                         char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:746:72: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  746 | HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                               ~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:18:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   18 |         HAL_UART_Transmit(&huart2, &ch, 1, 10); //Echo
+      |                                    ^~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:20:44: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   20 |                 HAL_UART_Transmit(&huart2, "\n", 1, 10);
+      |                                            ^~~~
+      |                                            |
+      |                                            char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function '__io_putchar':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:25:36: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   25 |         HAL_UART_Transmit(&huart2, &ch, 1, 10);
+      |                                    ^~~
+      |                                    |
+      |                                    int *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function 'ProgramStart':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:37:9: warning: implicit declaration of function 'cls' [-Wimplicit-function-declaration]
+   37 |         cls();
+      |         ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:38:9: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+   38 |         Cursor(0, 0);
+      |         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: At top level:
+C:/Users/user/source/repos/STM32/myLib/myLib.c:45:6: warning: conflicting types for 'cls'; have 'void()'
+   45 | void cls()
+      |      ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:37:9: note: previous implicit declaration of 'cls' with type 'void()'
+   37 |         cls();
+      |         ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:50:6: warning: conflicting types for 'Cursor'; have 'void(int,  int)'
+   50 | void Cursor(int x, int y)
+      |      ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:38:9: note: previous implicit declaration of 'Cursor' with type 'void(int,  int)'
+   38 |         Cursor(0, 0);
+      |         ^~~~~~
 arm-none-eabi-gcc -o "test007_uSonic_Motor.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test007_uSonic_Motor\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test007_uSonic_Motor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: test007_uSonic_Motor.elf
  
@@ -31,5 +83,5 @@ Finished building: default.size.stdout
 Finished building: test007_uSonic_Motor.list
  
 
-15:37:51 Build Finished. 0 errors, 4 warnings. (took 1s.527ms)
+16:15:39 Build Finished. 0 errors, 8 warnings. (took 597ms)
 
