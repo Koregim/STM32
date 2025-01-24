@@ -1,0 +1,8 @@
+C:/Users/user/source/repos/STM32/myLib/myLib.c:14:5:__io_getchar	3
+C:/Users/user/source/repos/STM32/myLib/myLib.c:23:5:__io_putchar	1
+C:/Users/user/source/repos/STM32/myLib/myLib.c:29:6:StandBy	2
+C:/Users/user/source/repos/STM32/myLib/myLib.c:34:6:ProgramStart	1
+C:/Users/user/source/repos/STM32/myLib/myLib.c:45:6:cls	1
+C:/Users/user/source/repos/STM32/myLib/myLib.c:50:6:Cursor	1
+C:/Users/user/source/repos/STM32/myLib/myLib.c:78:6:ToUpper	4
+C:/Users/user/source/repos/STM32/myLib/myLib.c:86:6:ToLower	4

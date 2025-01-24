@@ -19699,3 +19699,1424 @@ Finished building: default.size.stdout
  
 Finished building: test009_Bluetooth.list
  
+10:51:17 **** Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/list.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/queue.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/queue.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/queue.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/tasks.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/tasks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/tasks.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/timers.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/timers.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/timers.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/timers.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411retx.d" -MT"Core/Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411retx.o" "../Core/Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "C:/Users/user/source/repos/STM32/myLib/myLib.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/myLib.d" -MT"Core/Src/myLib.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/myLib.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_timebase_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_timebase_tim.d" -MT"Core/Src/stm32f4xx_hal_timebase_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_timebase_tim.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function '__io_getchar':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:17:41: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive' differ in signedness [-Wpointer-sign]
+   17 |         while(HAL_UART_Receive(&huart2, &ch, 1, 10) != HAL_OK);
+      |                                         ^~~
+      |                                         |
+      |                                         char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:746:72: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  746 | HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                               ~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:18:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   18 |         HAL_UART_Transmit(&huart2, &ch, 1, 10); //Echo
+      |                                    ^~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:20:44: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   20 |                 HAL_UART_Transmit(&huart2, "\n", 1, 10);
+      |                                            ^~~~
+      |                                            |
+      |                                            char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function '__io_putchar':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:25:36: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   25 |         HAL_UART_Transmit(&huart2, &ch, 1, 10);
+      |                                    ^~~
+      |                                    |
+      |                                    int *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function 'ProgramStart':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:37:9: warning: implicit declaration of function 'cls' [-Wimplicit-function-declaration]
+   37 |         cls();
+      |         ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:38:9: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+   38 |         Cursor(0, 0);
+      |         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: At top level:
+C:/Users/user/source/repos/STM32/myLib/myLib.c:45:6: warning: conflicting types for 'cls'; have 'void()'
+   45 | void cls()
+      |      ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:37:9: note: previous implicit declaration of 'cls' with type 'void()'
+   37 |         cls();
+      |         ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:50:6: warning: conflicting types for 'Cursor'; have 'void(int,  int)'
+   50 | void Cursor(int x, int y)
+      |      ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:38:9: note: previous implicit declaration of 'Cursor' with type 'void(int,  int)'
+   38 |         Cursor(0, 0);
+      |         ^~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:128:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  128 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22024	    116	  18428	  40568	   9e78	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+10:51:23 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-size  test010_RTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22024	    116	  18428	  40568	   9e78	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+10:52:19 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+   99 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22024	    116	  18428	  40568	   9e78	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+10:54:26 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+   99 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  21960	    116	  18428	  40504	   9e38	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+10:57:37 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+   99 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'StartDefaultTask':
+../Core/Src/main.c:279:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  279 |     printf("LD2 flashed %d times\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:279:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  279 |     printf("LD2 flashed %d times\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:279:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22000	    116	  18428	  40544	   9e60	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+11:45:44 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  101 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:284:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:284:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:284:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:304:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  304 |         printf("LD2 flashed %d times\r\n", n++);
+      |         ^~~~~~
+../Core/Src/main.c:304:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22248	    116	  18436	  40800	   9f60	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+11:48:08 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  101 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:284:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:284:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:284:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:306:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  306 |         printf("LD2 flashed %d times (Task_________2)\r\n", n2++);
+      |         ^~~~~~
+../Core/Src/main.c:306:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22264	    116	  18436	  40816	   9f70	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+11:54:22 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  101 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:284:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:284:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:284:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:305:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  305 |         printf("LD2 flashed %d times (Task_________2)\r\n", n2++);
+      |         ^~~~~~
+../Core/Src/main.c:305:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22264	    116	  18436	  40816	   9f70	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+12:01:50 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  101 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:284:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:284:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:284:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:306:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  306 |         printf("LD2 flashed %d times (Task_________2)\r\n", n2++);
+      |         ^~~~~~
+../Core/Src/main.c:306:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22264	    116	  18436	  40816	   9f70	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+12:13:38 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  101 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:284:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:284:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:284:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:306:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  306 |         printf("LD2 flashed %d times (Task_________2)\r\n", n2++);
+      |         ^~~~~~
+../Core/Src/main.c:306:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22264	    116	  18436	  40816	   9f70	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+12:22:21 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  101 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:284:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:284:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:284:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:306:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  306 |         printf("LD2 flashed %d times (Task_________2)\r\n", n2++);
+      |         ^~~~~~
+../Core/Src/main.c:306:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22280	    116	  18436	  40832	   9f80	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+12:23:57 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  101 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:284:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:284:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:284:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:306:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  306 |         printf("LD2 flashed %d times (Task_________2)\r\n", n2++);
+      |         ^~~~~~
+../Core/Src/main.c:306:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22280	    116	  18436	  40832	   9f80	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+12:25:22 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  101 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:284:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:284:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:284:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:306:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  306 |         printf("LD2 flashed %d times (Task_________2)\r\n", n2++);
+      |         ^~~~~~
+../Core/Src/main.c:306:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22264	    116	  18436	  40816	   9f70	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+12:26:10 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  101 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:284:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:284:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  284 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:284:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:306:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  306 |         printf("Task2 %d times (Task_________2)\r\n", n2++);
+      |         ^~~~~~
+../Core/Src/main.c:306:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  22260	    116	  18436	  40812	   9f6c	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+12:40:38 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  101 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:284:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  284 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:285:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  285 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:285:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  285 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:285:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:309:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  309 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:309:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:310:9: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+  310 |         scanf("%d", &d);
+      |         ^~~~~
+../Core/Src/main.c:310:9: note: include '<stdio.h>' or provide a declaration of 'scanf'
+../Core/Src/main.c:310:9: warning: incompatible implicit declaration of built-in function 'scanf' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:310:9: note: include '<stdio.h>' or provide a declaration of 'scanf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  42468	    480	  18432	  61380	   efc4	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+12:51:12 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "C:/Users/user/source/repos/STM32/myLib/myLib.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/myLib.d" -MT"Core/Src/myLib.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/myLib.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function '__io_getchar':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:17:41: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive' differ in signedness [-Wpointer-sign]
+   17 |         while(HAL_UART_Receive(&huart2, &ch, 1, 10) != HAL_OK);
+      |                                         ^~~
+      |                                         |
+      |                                         char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:746:72: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  746 | HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                               ~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:18:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   18 |         HAL_UART_Transmit(&huart2, &ch, 1, 10); //Echo
+      |                                    ^~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:20:44: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   20 |                 HAL_UART_Transmit(&huart2, "\n", 1, 10);
+      |                                            ^~~~
+      |                                            |
+      |                                            char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function '__io_putchar':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:25:36: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   25 |         HAL_UART_Transmit(&huart2, &ch, 1, 10);
+      |                                    ^~~
+      |                                    |
+      |                                    int *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function 'ProgramStart':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:37:9: warning: implicit declaration of function 'cls' [-Wimplicit-function-declaration]
+   37 |         cls();
+      |         ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:38:9: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+   38 |         Cursor(0, 0);
+      |         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: At top level:
+C:/Users/user/source/repos/STM32/myLib/myLib.c:45:6: warning: conflicting types for 'cls'; have 'void()'
+   45 | void cls()
+      |      ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:37:9: note: previous implicit declaration of 'cls' with type 'void()'
+   37 |         cls();
+      |         ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:50:6: warning: conflicting types for 'Cursor'; have 'void(int,  int)'
+   50 | void Cursor(int x, int y)
+      |      ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:38:9: note: previous implicit declaration of 'Cursor' with type 'void(int,  int)'
+   38 |         Cursor(0, 0);
+      |         ^~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  111 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:298:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  298 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:299:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  299 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:299:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  299 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:299:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:323:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  323 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:323:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:326:13: warning: unused variable 'step' [-Wunused-variable]
+  326 |         int step = d * 4096 / 360; // d / 360 * 2048 ==> (integer d) d / 360 ==> d<360, (d/360) == 0
+      |             ^~~~
+../Core/Src/main.c:326:22: warning: 'd' is used uninitialized [-Wuninitialized]
+  326 |         int step = d * 4096 / 360; // d / 360 * 2048 ==> (integer d) d / 360 ==> d<360, (d/360) == 0
+      |                    ~~^~~~~~
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  39928	    480	  18440	  58848	   e5e0	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+12:52:09 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  111 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:298:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  298 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:299:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  299 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:299:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  299 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:299:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:323:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  323 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:323:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:326:13: warning: unused variable 'step' [-Wunused-variable]
+  326 |         int step = d * 4096 / 360; // d / 360 * 2048 ==> (integer d) d / 360 ==> d<360, (d/360) == 0
+      |             ^~~~
+../Core/Src/main.c:326:22: warning: 'd' is used uninitialized [-Wuninitialized]
+  326 |         int step = d * 4096 / 360; // d / 360 * 2048 ==> (integer d) d / 360 ==> d<360, (d/360) == 0
+      |                    ~~^~~~~~
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  39928	    480	  18440	  58848	   e5e0	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+12:54:26 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:75:17: error: 'd' undeclared (first use in this function)
+   75 |                 d += 45;
+      |                 ^
+../Core/Src/main.c:75:17: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  112 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:299:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  299 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:300:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  300 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:300:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  300 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:300:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:324:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  324 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:324:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j24 all" terminated with exit code 2. Build might be incomplete.
+12:54:54 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  113 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:300:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  300 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:301:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  301 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:301:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  301 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:301:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:325:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  325 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:325:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40016	    480	  18440	  58936	   e638	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:16:52 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  113 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:300:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  300 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:301:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  301 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:301:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  301 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:301:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:330:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  330 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:330:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40032	    480	  18440	  58952	   e648	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:18:09 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  113 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:300:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  300 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:301:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  301 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:301:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  301 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:301:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:330:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  330 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:330:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40032	    480	  18440	  58952	   e648	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:19:41 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  113 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:300:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  300 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:301:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  301 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:301:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  301 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:301:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:330:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  330 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:330:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40032	    480	  18440	  58952	   e648	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:27:27 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  114 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:301:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  301 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:302:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  302 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:302:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  302 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:302:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:332:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  332 |                 printf("button is pressed");
+      |                 ^~~~~~
+../Core/Src/main.c:332:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:334:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  334 |                 printf("                 ");
+      |                 ^~~~~~
+../Core/Src/main.c:334:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:339:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  339 |         printf("Wave(Full) : %d steps, Half : %d steps", step / 2, step);
+      |         ^~~~~~
+../Core/Src/main.c:339:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40072	    480	  18448	  59000	   e678	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:31:59 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  114 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:301:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  301 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:302:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  302 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:302:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  302 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:302:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:337:9: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+  337 |         scanf("%d", &d);
+      |         ^~~~~
+../Core/Src/main.c:337:9: note: include '<stdio.h>' or provide a declaration of 'scanf'
+../Core/Src/main.c:337:9: warning: incompatible implicit declaration of built-in function 'scanf' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:337:9: note: include '<stdio.h>' or provide a declaration of 'scanf'
+../Core/Src/main.c:339:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  339 |         printf("Wave(Full) : %d steps, Half : %d steps", step / 2, step);
+      |         ^~~~~~
+../Core/Src/main.c:339:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  42628	    480	  18448	  61556	   f074	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:33:15 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  114 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:301:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  301 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:302:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  302 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:302:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  302 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:302:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:335:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  335 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:335:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:337:9: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+  337 |         scanf("%d", &d);
+      |         ^~~~~
+../Core/Src/main.c:337:9: note: include '<stdio.h>' or provide a declaration of 'scanf'
+../Core/Src/main.c:337:9: warning: incompatible implicit declaration of built-in function 'scanf' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:337:9: note: include '<stdio.h>' or provide a declaration of 'scanf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  42660	    480	  18448	  61588	   f094	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:33:53 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  114 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:301:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  301 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:302:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  302 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:302:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  302 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:302:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:335:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  335 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:335:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:337:9: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+  337 |         scanf("%d", &d);
+      |         ^~~~~
+../Core/Src/main.c:337:9: note: include '<stdio.h>' or provide a declaration of 'scanf'
+../Core/Src/main.c:337:9: warning: incompatible implicit declaration of built-in function 'scanf' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:337:9: note: include '<stdio.h>' or provide a declaration of 'scanf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  42660	    480	  18448	  61588	   f094	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:42:42 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "C:/Users/user/source/repos/STM32/myLib/myLib.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/myLib.d" -MT"Core/Src/myLib.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/myLib.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function '__io_getchar':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:17:41: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive' differ in signedness [-Wpointer-sign]
+   17 |         while(HAL_UART_Receive(&huart2, &ch, 1, 10) != HAL_OK);
+      |                                         ^~~
+      |                                         |
+      |                                         char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:746:72: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  746 | HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                               ~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:18:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   18 |         HAL_UART_Transmit(&huart2, &ch, 1, 10); //Echo
+      |                                    ^~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:20:44: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   20 |                 HAL_UART_Transmit(&huart2, "\n", 1, 10);
+      |                                            ^~~~
+      |                                            |
+      |                                            char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function '__io_putchar':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:25:36: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+   25 |         HAL_UART_Transmit(&huart2, &ch, 1, 10);
+      |                                    ^~~
+      |                                    |
+      |                                    int *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from C:/Users/user/source/repos/STM32/myLib/myLib.c:7:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:745:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int *'
+  745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: In function 'ProgramStart':
+C:/Users/user/source/repos/STM32/myLib/myLib.c:37:9: warning: implicit declaration of function 'cls' [-Wimplicit-function-declaration]
+   37 |         cls();
+      |         ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:38:9: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+   38 |         Cursor(0, 0);
+      |         ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c: At top level:
+C:/Users/user/source/repos/STM32/myLib/myLib.c:45:6: warning: conflicting types for 'cls'; have 'void()'
+   45 | void cls()
+      |      ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:37:9: note: previous implicit declaration of 'cls' with type 'void()'
+   37 |         cls();
+      |         ^~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:50:6: warning: conflicting types for 'Cursor'; have 'void(int,  int)'
+   50 | void Cursor(int x, int y)
+      |      ^~~~~~
+C:/Users/user/source/repos/STM32/myLib/myLib.c:38:9: note: previous implicit declaration of 'Cursor' with type 'void(int,  int)'
+   38 |         Cursor(0, 0);
+      |         ^~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:146:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  146 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:343:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  343 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:344:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  344 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:344:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  344 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:344:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:377:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  377 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:377:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40320	    480	  18448	  59248	   e770	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:44:06 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:146:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  146 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:343:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  343 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:344:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  344 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:344:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  344 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:344:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:378:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  378 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:378:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40352	    480	  18448	  59280	   e790	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:45:34 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:146:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  146 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:343:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  343 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:344:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  344 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:344:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  344 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:344:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:378:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  378 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:378:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40368	    480	  18448	  59296	   e7a0	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:46:41 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:146:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  146 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:343:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  343 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:344:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  344 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:344:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  344 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:344:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:378:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  378 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:378:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40368	    480	  18448	  59296	   e7a0	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+14:47:45 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:145:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  145 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:342:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  342 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:343:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  343 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:343:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  343 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:343:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:377:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  377 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:377:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40368	    480	  18448	  59296	   e7a0	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+16:30:10 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:145:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  145 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:342:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  342 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:343:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  343 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:343:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  343 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:343:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:377:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  377 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:377:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40368	    480	  18448	  59296	   e7a0	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
+16:31:35 **** Incremental Build of configuration Debug for project test010_RTOS ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:145:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  145 |   ProgramStart("RTOS Test"); // before the osKernelStart
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c: In function 'myStartTask01':
+../Core/Src/main.c:342:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
+  342 |     Cursor(0,0);
+      |     ^~~~~~
+../Core/Src/main.c:343:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  343 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   21 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   22 | 
+../Core/Src/main.c:343:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  343 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
+      |     ^~~~~~
+../Core/Src/main.c:343:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask02':
+../Core/Src/main.c:377:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  377 |         printf("Input Degree : ");
+      |         ^~~~~~
+../Core/Src/main.c:377:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test010_RTOS.elf
+ 
+arm-none-eabi-size  test010_RTOS.elf 
+arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
+   text	   data	    bss	    dec	    hex	filename
+  40368	    480	  18448	  59296	   e7a0	test010_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: test010_RTOS.list
+ 
