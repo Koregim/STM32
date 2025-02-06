@@ -1,41 +1,56 @@
-16:31:35 **** Incremental Build of configuration Debug for project test010_RTOS ****
+10:03:13 **** Incremental Build of configuration Debug for project test010_RTOS ****
 make -j24 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:145:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
-  145 |   ProgramStart("RTOS Test"); // before the osKernelStart
+../Core/Src/main.c:243:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  243 |   ProgramStart("RTOS Test"); // before the osKernelStart
       |   ^~~~~~~~~~~~
 ../Core/Src/main.c: In function 'myStartTask01':
-../Core/Src/main.c:342:5: warning: implicit declaration of function 'Cursor' [-Wimplicit-function-declaration]
-  342 |     Cursor(0,0);
-      |     ^~~~~~
-../Core/Src/main.c:343:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-  343 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
-      |     ^~~~~~
+../Core/Src/main.c:473:19: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  473 |                   printf("Spinning : %d\r\n", spinning);
+      |                   ^~~~~~
 ../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
    21 | #include "cmsis_os.h"
   +++ |+#include <stdio.h>
    22 | 
-../Core/Src/main.c:343:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  343 |     printf("LD2 flashed %d times (Task 1)\r\n", n++);
-      |     ^~~~~~
-../Core/Src/main.c:343:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:473:19: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  473 |                   printf("Spinning : %d\r\n", spinning);
+      |                   ^~~~~~
+../Core/Src/main.c:473:19: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:483:19: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  483 |                   printf("3333333333333\r\n");
+      |                   ^~~~~~
+../Core/Src/main.c:483:19: note: include '<stdio.h>' or provide a declaration of 'printf'
 ../Core/Src/main.c: In function 'myStartTask02':
-../Core/Src/main.c:377:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  377 |         printf("Input Degree : ");
-      |         ^~~~~~
-../Core/Src/main.c:377:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:529:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  529 |                 printf("Angle2 : %d \r\n", angle);
+      |                 ^~~~~~
+../Core/Src/main.c:529:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:544:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  544 |           printf("spinning2 : %d\r\n", spinning);
+      |           ^~~~~~
+../Core/Src/main.c:544:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask03':
+../Core/Src/main.c:605:11: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  605 |           printf("tttttest \r\n");
+      |           ^~~~~~
+../Core/Src/main.c:605:11: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: In function 'myStartTask04':
+../Core/Src/main.c:627:19: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  627 |                   printf("Motor Complete\r\n");
+      |                   ^~~~~~
+../Core/Src/main.c:627:19: note: include '<stdio.h>' or provide a declaration of 'printf'
 arm-none-eabi-gcc -o "test010_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test010_RTOS\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test010_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: test010_RTOS.elf
  
 arm-none-eabi-size  test010_RTOS.elf 
 arm-none-eabi-objdump -h -S test010_RTOS.elf  > "test010_RTOS.list"
    text	   data	    bss	    dec	    hex	filename
-  40368	    480	  18448	  59296	   e7a0	test010_RTOS.elf
+  47120	    480	  18544	  66144	  10260	test010_RTOS.elf
 Finished building: default.size.stdout
  
 Finished building: test010_RTOS.list
  
 
-16:31:35 Build Finished. 0 errors, 5 warnings. (took 647ms)
+10:03:14 Build Finished. 0 errors, 8 warnings. (took 788ms)
 
