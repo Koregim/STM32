@@ -1,0 +1,21 @@
+11:41:44 **** Incremental Build of configuration Debug for project test012_MotorDriver ****
+make -j24 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:96:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+   96 |   ProgramStart("DC Motor & Motor Driver Test");
+      |   ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "test012_MotorDriver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test012_MotorDriver\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test012_MotorDriver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test012_MotorDriver.elf
+ 
+arm-none-eabi-size  test012_MotorDriver.elf 
+arm-none-eabi-objdump -h -S test012_MotorDriver.elf  > "test012_MotorDriver.list"
+   text	   data	    bss	    dec	    hex	filename
+  18540	    112	   2048	  20700	   50dc	test012_MotorDriver.elf
+Finished building: default.size.stdout
+ 
+Finished building: test012_MotorDriver.list
+ 
+
+11:41:44 Build Finished. 0 errors, 1 warnings. (took 430ms)
+

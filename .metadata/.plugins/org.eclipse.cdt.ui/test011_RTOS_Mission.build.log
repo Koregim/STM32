@@ -1,33 +1,33 @@
-12:28:56 **** Incremental Build of configuration Debug for project test011_RTOS_Mission ****
+16:39:49 **** Incremental Build of configuration Debug for project test011_RTOS_Mission ****
 make -j24 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:242:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
-  242 |   ProgramStart("FreeRTOS Mission");
+../Core/Src/main.c:245:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  245 |   ProgramStart("FreeRTOS Mission");
       |   ^~~~~~~~~~~~
 ../Core/Src/main.c: In function 'myStartTask04':
-../Core/Src/main.c:524:19: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-  524 |                   printf("Current distance : %6.2f\r\n", dist);
+../Core/Src/main.c:633:19: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  633 |                   printf("Current distance : %d\r\n", dist);
       |                   ^~~~~~
 ../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'printf'
    21 | #include "cmsis_os.h"
   +++ |+#include <stdio.h>
    22 | 
-../Core/Src/main.c:524:19: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
-  524 |                   printf("Current distance : %6.2f\r\n", dist);
+../Core/Src/main.c:633:19: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  633 |                   printf("Current distance : %d\r\n", dist);
       |                   ^~~~~~
-../Core/Src/main.c:524:19: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:633:19: note: include '<stdio.h>' or provide a declaration of 'printf'
 arm-none-eabi-gcc -o "test011_RTOS_Mission.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\user\source\repos\STM32\test011_RTOS_Mission\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test011_RTOS_Mission.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: test011_RTOS_Mission.elf
  
 arm-none-eabi-size  test011_RTOS_Mission.elf 
 arm-none-eabi-objdump -h -S test011_RTOS_Mission.elf  > "test011_RTOS_Mission.list"
    text	   data	    bss	    dec	    hex	filename
-  46360	    480	  18528	  65368	   ff58	test011_RTOS_Mission.elf
+  48824	    484	  18604	  67912	  10948	test011_RTOS_Mission.elf
 Finished building: default.size.stdout
  
 Finished building: test011_RTOS_Mission.list
  
 
-12:28:56 Build Finished. 0 errors, 3 warnings. (took 533ms)
+16:39:49 Build Finished. 0 errors, 3 warnings. (took 537ms)
 

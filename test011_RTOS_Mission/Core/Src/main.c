@@ -42,6 +42,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim2;
+TIM_HandleTypeDef htim3;
 
 UART_HandleTypeDef huart2;
 
@@ -59,6 +60,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_TIM2_Init(void);
+static void MX_TIM3_Init(void);
 void myStartTask01(void const * argument);
 void myStartTask02(void const * argument);
 void myStartTask03(void const * argument);
@@ -101,7 +103,7 @@ void LD2Test()
 ////	}
 //	osSemaphoreRelease(myBinarySem01Handle);
 //}
-double dist;
+int dist;
 int t1 = 0, t2 = 0;
 int angle = 0;
 
@@ -120,49 +122,49 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_PIN)
 			dist = (t2 - t1) * 0.17;
 		}
 	}
-	if(dist < 100)
-	{
-		angle = 90 * 2048 / 360;
-		spinning = 1;
-	}
-	else if(dist >= 100 && dist < 300)
-	{
-		angle = 45 * 2048 / 360;
-		spinning = 1;
-	}
+//	if(dist < 100)
+//	{
+//		angle = 90 * 2048 / 360;
+//		spinning = 1;
+//	}
+//	else if(dist >= 100 && dist < 300)
+//	{
+//		angle = 45 * 2048 / 360;
+//		spinning = 1;
+//	}
 
 }
-void step_Wave(int step)
-{
-	switch(step)
-	{
-	case 0:
-		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 1);
-		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
-		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
-		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
-		break;
-	case 1:
-		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
-		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 1);
-		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
-		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
-		break;
-	case 2:
-		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
-		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
-		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 1);
-		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
-		break;
-	case 3:
-		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
-		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
-		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
-		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 1);
-		break;
-
-	}
-}
+//void step_Wave(int step)
+//{
+//	switch(step)
+//	{
+//	case 0:
+//		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 1);
+//		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+//		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+//		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+//		break;
+//	case 1:
+//		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+//		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 1);
+//		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+//		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+//		break;
+//	case 2:
+//		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+//		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+//		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 1);
+//		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 0);
+//		break;
+//	case 3:
+//		HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, 0);
+//		HAL_GPIO_WritePin(IN2_GPIO_Port, IN2_Pin, 0);
+//		HAL_GPIO_WritePin(IN3_GPIO_Port, IN3_Pin, 0);
+//		HAL_GPIO_WritePin(IN4_GPIO_Port, IN4_Pin, 1);
+//		break;
+//
+//	}
+//}
 /* USER CODE END 0 */
 
 /**
@@ -195,6 +197,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_TIM2_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -241,6 +244,9 @@ int main(void)
   /* add threads, ... */
   ProgramStart("FreeRTOS Mission");
   HAL_TIM_Base_Start(&htim2);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  HAL_GPIO_WritePin(D_A1_GPIO_Port, D_A1_Pin, 1);
+  HAL_GPIO_WritePin(D_A2_GPIO_Port, D_A2_Pin, 0);
   osSemaphoreRelease(myBinarySem01Handle);
   /* USER CODE END RTOS_THREADS */
 
@@ -351,6 +357,65 @@ static void MX_TIM2_Init(void)
 }
 
 /**
+  * @brief TIM3 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM3_Init(void)
+{
+
+  /* USER CODE BEGIN TIM3_Init 0 */
+
+  /* USER CODE END TIM3_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
+
+  /* USER CODE BEGIN TIM3_Init 1 */
+
+  /* USER CODE END TIM3_Init 1 */
+  htim3.Instance = TIM3;
+  htim3.Init.Prescaler = 84-1;
+  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim3.Init.Period = 1000-1;
+  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_Init(&htim3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;
+  sConfigOC.Pulse = 500;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM3_Init 2 */
+
+  /* USER CODE END TIM3_Init 2 */
+  HAL_TIM_MspPostInit(&htim3);
+
+}
+
+/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -404,7 +469,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, LD2_Pin|Trig_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, IN4_Pin|IN1_Pin|IN3_Pin|IN2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, D_A2_Pin|D_A1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -419,18 +484,18 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : IN4_Pin IN1_Pin IN3_Pin IN2_Pin */
-  GPIO_InitStruct.Pin = IN4_Pin|IN1_Pin|IN3_Pin|IN2_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
   /*Configure GPIO pin : Echo_Pin */
   GPIO_InitStruct.Pin = Echo_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(Echo_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : D_A2_Pin D_A1_Pin */
+  GPIO_InitStruct.Pin = D_A2_Pin|D_A1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI9_5_IRQn, 5, 0);
@@ -444,7 +509,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+int ccr1 = 500;
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_myStartTask01 */
@@ -484,23 +549,39 @@ void myStartTask02(void const * argument)
   /* Infinite loop */
   for(;;)
   {
+	  htim3.Instance->CCR1 = ccr1;
 	  if(osSemaphoreWait(myBinarySem01Handle, 0) == osOK)
 	  {
-		printf("Angle2 : %d \r\n", angle);
-		printf("Count : %d \r\n", cnt);
-		step_Wave(cnt % 4);
-		if(cnt < angle)
-		{
-			cnt++;
-		}
-		else
-		{
-			cnt = 0;
-			angle = 0;
-			spinning = 0;
-			osSemaphoreRelease(myBinarySem01Handle);
-		}
-		  osDelay(1);
+		  if(dist < 200)
+			  ccr1 = 0;
+		  else if(dist < 500 && dist >= 200)
+		  	{
+			    ccr1 = 150;
+			    spinning = 1;
+		  	}
+		  	else
+		  	{
+		  		ccr1 = 400;
+		  		spinning = 0;
+		  	}
+
+//		printf("Angle2 : %d \r\n", angle);
+//		printf("Count : %d \r\n", cnt);
+//		step_Wave(cnt % 4);
+//		if(cnt < angle)
+//		{
+//			cnt++;
+//		}
+//		else
+//		{
+//			cnt = 0;
+//			angle = 0;
+//			spinning = 0;
+//			osSemaphoreRelease(myBinarySem01Handle);
+//		}
+		  osSemaphoreRelease(myBinarySem01Handle);
+		  osDelay(10);
+
 	  }
     osDelay(1);
   }
@@ -523,9 +604,9 @@ void myStartTask03(void const * argument)
 	  if(spinning)
 	  {
 		  LD2Test();
-		  osDelay(500);
+		  osDelay(450);
 	  }
-    osDelay(1);
+    osDelay(50);
   }
   /* USER CODE END myStartTask03 */
 }
@@ -543,12 +624,16 @@ void myStartTask04(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-	  if(osSemaphoreWait(myBinarySem01Handle, 0) == osOK && !spinning){
-		  printf("Current distance : %6.2f\r\n", dist);
+//	  if(osSemaphoreWait(myBinarySem01Handle, 0) == osOK && !spinning){
+//		  printf("Current distance : %d\r\n", dist);
+//		  osSemaphoreRelease(myBinarySem01Handle);
+//		  osDelay(50);
+//	  }
+	  if(osSemaphoreWait(myBinarySem01Handle, 0) == osOK){
+		  printf("Current distance : %d\r\n", dist);
+		  osDelay(100);
 		  osSemaphoreRelease(myBinarySem01Handle);
-		  osDelay(50);
 	  }
-
     osDelay(1);
   }
   /* USER CODE END myStartTask04 */
