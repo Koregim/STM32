@@ -40,10 +40,10 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
-DMA_HandleTypeDef hdma_usart1_rx;
+UART_HandleTypeDef huart6;
 DMA_HandleTypeDef hdma_usart2_rx;
+DMA_HandleTypeDef hdma_usart6_rx;
 
 /* USER CODE BEGIN PV */
 
@@ -54,7 +54,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_USART2_UART_Init(void);
-static void MX_USART1_UART_Init(void);
+static void MX_USART6_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -67,7 +67,7 @@ char dum1, dum2;
 int head1 = 0, head2 = 0, tail1 = 0, tail2 = 0;
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-	if(huart == &huart1)
+	if(huart == &huart6)
 	{
 		buf1[tail1++] = dum1;
 		HAL_UART_Transmit(&huart2, &dum1/*== buf1+t1-1*/, 1, 10);		// putty print
@@ -76,7 +76,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 			CheckCMD(buf1);
 			tail1 = 0;
 		}
-		HAL_UART_Receive_IT(&huart1, &dum1, 1);			// interrupt chain
+		HAL_UART_Receive_IT(&huart6, &dum1, 1);			// interrupt chain
 	}
 
 
@@ -89,7 +89,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 			HAL_UART_Transmit(&huart2, "\n", 1, 10); // terminal echo
 
 			buf2[tail2++] = '\n'; // == HAL_UART_Transmit(&huart1, "\n", 1, 10);
-			HAL_UART_Transmit(&huart1, buf2, tail2, 10);	// AT Command
+			HAL_UART_Transmit(&huart6, buf2, tail2, 10);	// AT Command
 //			HAL_UART_Transmit(&huart1, "\n", 1, 10);
 			tail2 = 0;
 		}
@@ -136,12 +136,24 @@ void CheckCMD(char *bb)
 //	char * str = Trim(bb); //Trim : white space remove
 //	Trim_EX(str,bb);
 	ToUpper(str);
-	if(strncmp(str, "LED", 3) == 0)
+	if(strncmp(str, "MODE", 4) == 0)
 	{
-		str = Trim(str+3);
+		str = Trim(str+4);
 		if(str[0] == '1')
 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 1);
 		else if(str[0] == '0')
+			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+	}
+	else if(strncmp(str, "MOVE", 4) == 0)
+	{
+		str = Trim(str+4);
+		if(str[0] == '0')
+			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+		else if(str[0] == '1')
+			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+		else if(str[0] == '2')
+			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 0);
+		else if(str[0] == '3')
 			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 0);
 	}
 }
@@ -177,12 +189,12 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_USART2_UART_Init();
-  MX_USART1_UART_Init();
+  MX_USART6_UART_Init();
   /* USER CODE BEGIN 2 */
   ProgramStart("Bluetooth");
 //  HAL_UART_Receive_DMA(&huart1, buf1, BUF_SIZE);
 //  HAL_UART_Receive_DMA(&huart2, buf2, BUF_SIZE);
-  HAL_UART_Receive_IT(&huart1, &dum1, 1);
+  HAL_UART_Receive_IT(&huart6, &dum1, 1);
   HAL_UART_Receive_IT(&huart2, &dum2, 1);
   /* USER CODE END 2 */
 
@@ -244,39 +256,6 @@ void SystemClock_Config(void)
 }
 
 /**
-  * @brief USART1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART1_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART1_Init 0 */
-
-  /* USER CODE END USART1_Init 0 */
-
-  /* USER CODE BEGIN USART1_Init 1 */
-
-  /* USER CODE END USART1_Init 1 */
-  huart1.Instance = USART1;
-  huart1.Init.BaudRate = 9600;
-  huart1.Init.WordLength = UART_WORDLENGTH_8B;
-  huart1.Init.StopBits = UART_STOPBITS_1;
-  huart1.Init.Parity = UART_PARITY_NONE;
-  huart1.Init.Mode = UART_MODE_TX_RX;
-  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART1_Init 2 */
-
-  /* USER CODE END USART1_Init 2 */
-
-}
-
-/**
   * @brief USART2 Initialization Function
   * @param None
   * @retval None
@@ -310,14 +289,47 @@ static void MX_USART2_UART_Init(void)
 }
 
 /**
+  * @brief USART6 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART6_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART6_Init 0 */
+
+  /* USER CODE END USART6_Init 0 */
+
+  /* USER CODE BEGIN USART6_Init 1 */
+
+  /* USER CODE END USART6_Init 1 */
+  huart6.Instance = USART6;
+  huart6.Init.BaudRate = 9600;
+  huart6.Init.WordLength = UART_WORDLENGTH_8B;
+  huart6.Init.StopBits = UART_STOPBITS_1;
+  huart6.Init.Parity = UART_PARITY_NONE;
+  huart6.Init.Mode = UART_MODE_TX_RX;
+  huart6.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart6.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart6) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART6_Init 2 */
+
+  /* USER CODE END USART6_Init 2 */
+
+}
+
+/**
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void)
 {
 
   /* DMA controller clock enable */
-  __HAL_RCC_DMA2_CLK_ENABLE();
   __HAL_RCC_DMA1_CLK_ENABLE();
+  __HAL_RCC_DMA2_CLK_ENABLE();
 
   /* DMA interrupt init */
   /* DMA1_Stream5_IRQn interrupt configuration */

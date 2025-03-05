@@ -1,0 +1,8 @@
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:16:6:lcd_command	1
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:31:6:lcd_data	1
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:46:6:lcd_init	1
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:59:6:lcd_print	2
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:64:6:lcd_printEx	2
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:73:6:lcd_printEx2	2
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:92:6:i2c_init	1
+C:/Users/user/source/repos/STM32/myLib/lcd1602.c:98:5:i2c_scan	5

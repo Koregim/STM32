@@ -1,6 +1,8 @@
-16:47:37 **** Incremental Build of configuration Debug for project test009_Bluetooth ****
+15:18:03 **** Incremental Build of configuration Debug for project test009_Bluetooth ****
 make -j24 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
 ../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
 ../Core/Src/main.c:73:44: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
    73 |                 HAL_UART_Transmit(&huart2, &dum1/*== buf1+t1-1*/, 1, 10);               // putty print
@@ -18,7 +20,7 @@ In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
    76 |                         CheckCMD(buf1);
       |                         ^~~~~~~~
 ../Core/Src/main.c:79:46: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
-   79 |                 HAL_UART_Receive_IT(&huart1, &dum1, 1);                 // interrupt chain
+   79 |                 HAL_UART_Receive_IT(&huart6, &dum1, 1);                 // interrupt chain
       |                                              ^~~~~
       |                                              |
       |                                              char *
@@ -54,7 +56,7 @@ In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
   745 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
       |                                                                ~~~~~~~~~~~~~~~^~~~~
 ../Core/Src/main.c:92:52: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
-   92 |                         HAL_UART_Transmit(&huart1, buf2, tail2, 10);    // AT Command
+   92 |                         HAL_UART_Transmit(&huart6, buf2, tail2, 10);    // AT Command
       |                                                    ^~~~
       |                                                    |
       |                                                    char *
@@ -127,19 +129,23 @@ In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
   138 |         ToUpper(str);
       |         ^~~~~~~
 ../Core/Src/main.c:139:12: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
-  139 |         if(strncmp(str, "LED", 3) == 0)
+  139 |         if(strncmp(str, "MODE", 4) == 0)
       |            ^~~~~~~
 ../Core/Src/main.c:139:12: note: include '<string.h>' or provide a declaration of 'strncmp'
-../Core/Src/main.c:139:32: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
-  139 |         if(strncmp(str, "LED", 3) == 0)
-      |                                ^
+../Core/Src/main.c:139:33: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  139 |         if(strncmp(str, "MODE", 4) == 0)
+      |                                 ^
+<built-in>: note: built-in 'strncmp' declared here
+../Core/Src/main.c:147:38: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  147 |         else if(strncmp(str, "MOVE", 4) == 0)
+      |                                      ^
 <built-in>: note: built-in 'strncmp' declared here
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:182:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
-  182 |   ProgramStart("Bluetooth");
+../Core/Src/main.c:194:3: warning: implicit declaration of function 'ProgramStart' [-Wimplicit-function-declaration]
+  194 |   ProgramStart("Bluetooth");
       |   ^~~~~~~~~~~~
-../Core/Src/main.c:185:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
-  185 |   HAL_UART_Receive_IT(&huart1, &dum1, 1);
+../Core/Src/main.c:197:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+  197 |   HAL_UART_Receive_IT(&huart6, &dum1, 1);
       |                                ^~~~~
       |                                |
       |                                char *
@@ -150,8 +156,8 @@ In file included from ../Core/Inc/stm32f4xx_hal_conf.h:411,
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:748:75: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
   748 | HAL_StatusTypeDef HAL_UART_Receive_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
       |                                                                  ~~~~~~~~~^~~~~
-../Core/Src/main.c:186:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
-  186 |   HAL_UART_Receive_IT(&huart2, &dum2, 1);
+../Core/Src/main.c:198:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_IT' differ in signedness [-Wpointer-sign]
+  198 |   HAL_UART_Receive_IT(&huart2, &dum2, 1);
       |                                ^~~~~
       |                                |
       |                                char *
@@ -168,11 +174,11 @@ Finished building target: test009_Bluetooth.elf
 arm-none-eabi-size  test009_Bluetooth.elf 
 arm-none-eabi-objdump -h -S test009_Bluetooth.elf  > "test009_Bluetooth.list"
    text	   data	    bss	    dec	    hex	filename
-  20096	    112	   2456	  22664	   5888	test009_Bluetooth.elf
+  20220	    112	   2456	  22788	   5904	test009_Bluetooth.elf
 Finished building: default.size.stdout
  
 Finished building: test009_Bluetooth.list
  
 
-16:47:38 Build Finished. 0 errors, 22 warnings. (took 601ms)
+15:18:03 Build Finished. 0 errors, 23 warnings. (took 694ms)
 
